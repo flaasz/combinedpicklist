@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Combined Pick Lists</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .container {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+iframe:first-child {
+  flex: 5;
+}
+
+iframe:last-child {
+  flex: 2;
+}
+    iframe {
+      flex: 1;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe class="picklist" allow="local-network-access *" src="https://ale-monitor-internal.logistics.zalan.do/sites/bleiswijk/dialog/pickmonitorops/?parms=1_HALL" title="Pick List 1" loading="lazy"></iframe>
+    <iframe class="picklist" allow="local-network-access *" src="https://ale-monitor-internal.logistics.zalan.do/sites/bleiswijk/dialog/pickmonitorops/?parms=4_HALL" title="Pick List 2" loading="lazy"></iframe>
+  </div>
+</body>
+</html>
